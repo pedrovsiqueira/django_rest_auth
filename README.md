@@ -60,29 +60,14 @@ cURL for Login
 curl --location 'http://127.0.0.1:8000/api/auth/login/' \
 --header 'Content-Type: application/json' \
 --data '{
-    "username": "pedrovsiqueira18",
+    "username": "pedrovsiqueira",
     "password": "Pass1234*"
 }'
 
 cURL for test_token
+
 curl --location 'http://127.0.0.1:8000/api/auth/test_token/' \
 --header 'Authorization: Token 829d8debe9e9fa62eafa872d6deb868fe2b72c7b'
-
-Users endpoint
-
-{
-    "user": {
-        "username": "pedro",
-        "first_name": "Pedro",
-        "last_name": "Siqueira",
-        "email": "pedro@gmail.com",
-        "password": "123456",
-        "cpf": "238.050.690-65" #random CPF generated
-    },
-    "type_user": {
-        "type": "people"
-    }
-}
 
 ```
 
